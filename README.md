@@ -1,121 +1,193 @@
-# 🎓 Quiz Master Pro – Java Swing Based Quiz Application
+🎓 Online Quiz Application
 
-Quiz Master Pro is an interactive and feature-rich desktop quiz application built using **Java Swing**. It supports multiple quiz categories, score tracking, leaderboards, per-question timers, and a modern UI design. Perfect for learning, practicing, or just testing your knowledge!
+Project ID: 65HIBKJS
 
----
+An interactive and secure Online Quiz Application built using Java, supporting user authentication, multiple quiz categories, MCQs, scoring, progress tracking, leaderboards, and a clean UI. Designed to automate quiz-taking and enhance learning efficiency.
 
-## 🚀 Features
+📌 Project Description
 
-- 👤 **User Login & Registration** with password protection
-- 🌗 **Dark Mode** toggle for a modern interface
-- 🧠 **Multiple Quiz Categories**: Java, General Knowledge, Mathematics
-- ⏳ **Per-Question Timer** with timeout buzzer
-- 🧪 **50-50 Lifeline** support
-- 🧾 **Score History Tracking** (file-based)
-- 🏆 **Leaderboard** showing top scorers
-- 🔁 **Rotating Question Sets** to prevent repetition
-- 📁 **File-Based Data Management** (No SQL required)
-- 📤 **Score Export Support** (CSV/PDF planned)
-- 📊 **Admin Panel** (Planned) for uploading questions
-- 🧑‍🎓 **User Profiles** with attempt logs
-- ✨ Gamification support (badges, levels - optional)
+The Online Quiz Application enables users to register, log in, take quizzes on different topics, view results instantly, and track their performance over time. Administrators can create and manage quizzes, questions, and scores through a dedicated quiz management panel.
 
----
+This project is designed to be completed within 25 days, following the provided guidelines.
 
-## 🖥️ Screenshots
+🚀 Features
+👤 User Authentication
 
-> Add screenshots here of:
-> - Login Page
-> - Quiz Interface
-> - Score Summary
-> - Score History
-> - Leaderboard
+Secure user registration & login
 
----
+Password hashing + salting for security
 
-## 📂 Project Structure
+Validation and error handling
 
-```
-QuizApplication/
+📝 Quiz Management (Admin Panel)
+
+Create quizzes on various topics
+
+Add, edit, delete multiple-choice questions
+
+Supports four options per question
+
+Store correct answers in the database
+
+CRUD operations implemented using JDBC
+
+🧠 Quiz Taking (Users)
+
+Select from available quizzes
+
+One question shown at a time
+
+Choose an option and submit
+
+Immediate feedback: Correct/Incorrect
+
+Timer-based questions (optional)
+
+Random question selection (optional)
+
+📊 Scoring & Progress Tracking
+
+Score displayed at end of quiz
+
+Track all quiz attempts
+
+Users can view past scores and attempts
+
+Attempt history stored in database
+
+🏆 Leaderboard (Optional)
+
+Top performers ranked by:
+
+total score
+
+average score
+
+Leaderboard displayed per quiz / overall
+
+🎨 User Interface
+
+Built using Java Swing / JavaFX
+
+Clean, intuitive, user-friendly layout
+
+Smooth navigation between screens
+
+💾 Data Persistence
+
+Database support: MySQL / SQLite
+
+JDBC-based CRUD operations
+
+Tables include:
+
+users
+
+quizzes
+
+questions
+
+quiz_attempts
+
+leaderboard (optional)
+
+🛡️ Security Considerations
+
+Password hashing + salting
+
+Input validation
+
+SQL injection prevention
+
+Exception handling
+
+📚 Documentation
+
+Setup guide
+
+Project structure
+
+Code documentation (comments)
+
+Assumptions & limitations
+
+📂 Project Structure
+OnlineQuizApplication/
 │
-├── data/
-│   ├── score_history.txt
-│   └── leaderboard.txt
+├── src/
+│   ├── auth/
+│   │   ├── Login.java
+│   │   └── Register.java
+│   ├── admin/
+│   │   ├── QuizManager.java
+│   │   └── QuestionEditor.java
+│   ├── quiz/
+│   │   ├── QuizList.java
+│   │   ├── QuizWindow.java
+│   │   └── ScoreSummary.java
+│   ├── database/
+│   │   ├── DBConnection.java
+│   │   └── CRUDOperations.java
+│   ├── models/
+│   ├── Leaderboard.java
+│   └── Utils.java
 │
-├── icons/
-│   ├── quiz.jpg
-│   ├── score.png
-│   └── timeout.wav
+├── assets/
+│   ├── icons/
+│   └── sounds/
 │
-├── Login.java
-├── Register.java
-├── Dashboard.java
-├── Quiz.java
-├── Score.java
-├── ScoreHistoryWriter.java
-├── Leaderboard.java
-└── SoundUtils.java
-```
+├── docs/
+│   ├── user_manual.pdf
+│   └── setup_guide.md
+│
+└── README.md
 
----
+🛠️ Technologies Used
 
-## 🛠️ Technologies Used
+Java (JDK 8+)
 
-- Java (JDK 8+)
-- Java Swing (GUI)
-- AWT
-- File I/O (for persistence)
-- Basic OOP concepts
+Java Swing / JavaFX
 
----
+MySQL / SQLite
 
-## ⚙️ How to Run
+JDBC
 
-1. **Clone the Repository**  
-   ```
-   git clone https://github.com/raahulpandey/Quiz-Application-using-java-swing.git
-   cd Quiz-Application-using-java-swing
-   ```
+OOP Principles
 
-2. **Compile all files**  
-   ```
-   javac *.java
-   ```
+Exception handling & validation
 
-3. **Run the application**  
-   ```
-   java Login
-   ```
+⚙️ How to Run
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/online-quiz-application.git
+cd online-quiz-application
 
-> Make sure your `icons` and `data` folders are in the correct directory before running.
+2️⃣ Setup Database
 
----
+Import provided SQL file
 
-## ✅ To-Do / Improvements
+Update DB credentials in DBConnection.java
 
-- [ ] Admin panel for uploading question sets
-- [ ] Score export to CSV or PDF
-- [ ] Profile management UI
-- [ ] More themes (dark/light/custom)
-- [ ] Online multiplayer quiz mode (optional)
+3️⃣ Compile the Project
+javac src/**/*.java
 
----
+4️⃣ Run the Application
+java Login
 
-## 📬 Feedback & Contributions
+📌 Future Enhancements
 
-Feel free to fork the repo, raise issues, or submit pull requests.  
-**Star ⭐** the repo if you liked it!
+Difficulty levels (easy/medium/hard)
 
----
+Advanced analytics for users
 
-## 👨‍💻 Author
+Email-based password reset
 
-**Rahul Pandey**  
-📧 arryaroy7367@gmail.com  
-🔗 [GitHub Profile](https://github.com/raahulpandey/)
+Export score reports (PDF/CSV)
 
----
+UI themes (dark/light/custom)
 
-## 📄 License
+Mobile-friendly version
 
-This project is open-source and available under the [MIT License](LICENSE).
+Online multiplayer quizzes
+
+## 👨‍💻 Author 
+**Vedant Bhonde** 📧 vedantbhonde01@gmail.com 🔗 [GitHub Profile]([https://github.com/vedntb])
