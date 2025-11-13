@@ -2,116 +2,115 @@
 
 Project ID: 65HIBKJS
 
-An interactive and secure Online Quiz Application built using Java, supporting user authentication, multiple quiz categories, MCQs, scoring, progress tracking, leaderboards, and a clean UI. Designed to automate quiz-taking and enhance learning efficiency.
+-An interactive and secure Online Quiz Application built using Java, supporting user authentication, multiple quiz categories, MCQs, scoring, progress tracking, leaderboards, and a clean UI. Designed to automate quiz-taking and enhance learning efficiency.
 
 📌 Project Description
 
-The Online Quiz Application enables users to register, log in, take quizzes on different topics, view results instantly, and track their performance over time. Administrators can create and manage quizzes, questions, and scores through a dedicated quiz management panel.
-
-This project is designed to be completed within 25 days, following the provided guidelines.
+-The Online Quiz Application enables users to register, log in, take quizzes on different topics, view results instantly, and track their performance over time. Administrators can create and manage quizzes, questions, and scores through a dedicated quiz management panel.
 
 🚀 Features
 👤 User Authentication
 
-Secure user registration & login
+-Secure user registration & login
 
-Password hashing + salting for security
+-Password hashing + salting for security
 
-Validation and error handling
+-Validation and error handling
 
 📝 Quiz Management (Admin Panel)
 
-Create quizzes on various topics
+-Create quizzes on various topics
 
-Add, edit, delete multiple-choice questions
+-Add, edit, delete multiple-choice questions
 
-Supports four options per question
+-Supports four options per question
 
-Store correct answers in the database
+-Store correct answers in the database
 
-CRUD operations implemented using JDBC
+-CRUD operations implemented using JDBC
 
 🧠 Quiz Taking (Users)
 
-Select from available quizzes
+-Select from available quizzes
 
-One question shown at a time
+-One question shown at a time
 
-Choose an option and submit
+-Choose an option and submit
 
-Immediate feedback: Correct/Incorrect
+-Immediate feedback: Correct/Incorrect
 
-Timer-based questions (optional)
+-Timer-based questions (optional)
 
-Random question selection (optional)
+-Random question selection (optional)
 
 📊 Scoring & Progress Tracking
 
-Score displayed at end of quiz
+-Score displayed at end of quiz
 
-Track all quiz attempts
+-Track all quiz attempts
 
-Users can view past scores and attempts
+-Users can view past scores and attempts
 
-Attempt history stored in database
+-Attempt history stored in database
 
 🏆 Leaderboard (Optional)
 
-Top performers ranked by:
+-Top performers ranked by:
 
-total score
+-total score
 
-average score
+-average score
 
-Leaderboard displayed per quiz / overall
+-Leaderboard displayed per quiz / overall
 
 🎨 User Interface
 
-Built using Java Swing / JavaFX
+-Built using Java Swing / JavaFX
 
-Clean, intuitive, user-friendly layout
+-Clean, intuitive, user-friendly layout
 
-Smooth navigation between screens
+-Smooth navigation between screens
 
 💾 Data Persistence
 
-Database support: MySQL / SQLite
+-Database support: MySQL / SQLite
 
-JDBC-based CRUD operations
+-JDBC-based CRUD operations
 
-Tables include:
+-Tables include:
 
-users
+-users
 
-quizzes
+-quizzes
 
-questions
+-questions
 
-quiz_attempts
+-quiz_attempts
 
-leaderboard (optional)
+-leaderboard (optional)
 
 🛡️ Security Considerations
 
-Password hashing + salting
+-Password hashing + salting
 
-Input validation
+-Input validation
 
-SQL injection prevention
+-SQL injection prevention
 
-Exception handling
+-Exception handling
 
 📚 Documentation
 
-Setup guide
+-Setup guide
 
-Project structure
+-Project structure
 
-Code documentation (comments)
+-Code documentation (comments)
 
-Assumptions & limitations
+-Assumptions & limitations
 
 📂 Project Structure
+
 OnlineQuizApplication/
 │
 ├── src/
@@ -144,19 +143,20 @@ OnlineQuizApplication/
 
 🛠️ Technologies Used
 
-Java (JDK 8+)
+-Java (JDK 8+)
 
-Java Swing / JavaFX
+-Java Swing / JavaFX
 
-MySQL / SQLite
+-MySQL / SQLite
 
-JDBC
+-JDBC
 
-OOP Principles
+-OOP Principles
 
-Exception handling & validation
+-Exception handling & validation
 
 ⚙️ How to Run
+
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/online-quiz-application.git
 cd online-quiz-application
@@ -175,19 +175,22 @@ java Login
 
 📌 Future Enhancements
 
-Difficulty levels (easy/medium/hard)
+-Difficulty levels (easy/medium/hard)
 
-Advanced analytics for users
+-Advanced analytics for users
 
-Email-based password reset
+-Email-based password reset
 
-Export score reports (PDF/CSV)
+-Export score reports (PDF/CSV)
 
-UI themes (dark/light/custom)
+-UI themes (dark/light/custom)
 
-Mobile-friendly version
+-Mobile-friendly version
 
-Online multiplayer quizzes
+-Online multiplayer quizzes
 
 ## 👨‍💻 Author 
-**Vedant Bhonde** 📧 vedantbhonde01@gmail.com 🔗 [GitHub Profile]([https://github.com/vedntb])
+**Vedant Bhonde** 
+
+📧 vedantbhonde01@gmail.com
+🔗 [GitHub Profile] ([https://github.com/vedntb])
